@@ -139,6 +139,57 @@ body {
     color: #FFF;
 }
 
+.results {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2F2F2F;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2F2F2F;
+}
+
+.results__show--option {
+    text-decoration: none;
+    color: #2F2F2F;
+    margin-left: 15px;
+}
+
+.results__show--option:hover {
+    color: #FF8A00;
+}
+
+.results__view--row {
+    background: url(../disign/row.svg) no-repeat center;
+    padding: 5px 11px;
+}
+
+.results__view--row:active {
+    background: url(../disign/row-active.svg) no-repeat center;
+}
+
+.results__view--row:hover {
+    background: url(../disign/row-hover.svg) no-repeat center;
+}
+
+.results__view--grid {
+    background: url(../disign/grid.svg) no-repeat center;
+    padding: 5px 11px;
+    margin-left: 15px;
+}
+
+.results__view--grid:active {
+    background: url(../disign/grid-active.svg) no-repeat center;
+}
+
+.results__view--grid:hover {
+    background: url(../disign/grid-hover.svg) no-repeat center;
+}
+
+.results-search {
+    display: grid;
+}
 
 
 .footer {
