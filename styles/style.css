@@ -1,3 +1,240 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.header {
+    background: #ffffff;
+    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+    padding: 9px 71px 29px 71px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 280px;
+    margin-top: 10px;
+    flex-grow: 0;
+}
+
+.menu__link {
+    width: 69px;
+    text-align: center;
+    color: #ff8a00;
+    text-decoration: none;
+    margin: 30px 56px 0 0;
+    position: relative;
+
+}
+
+.menu__link--contact {
+    width: 80px;
+}
+
+.menu__link--bold {
+    font-weight: bold;
+}
+
+.menu__link::after {
+    content: "___";
+    width: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 30%;
+    color: transparent;
+}
+
+.menu__link:hover::after {
+    color: #ff8a00;
+}
+
+.cart {
+    width: 15px;
+    background: url(../disign/basket.svg) no-repeat center;
+    background-position: 0 -50%;
+    padding: 3px 13px;
+    margin: 30px 28px 0 0;
+    position: relative;
+    height: 15px;
+}
+
+.cart__total {
+    border-radius: 50%;
+    background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+    font-size: 5px;
+    padding: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 15px;
+    left: 23px;
+}
+
+.reg {
+    color: #ffffff;
+    text-decoration: none;
+    background: linear-gradient(229.9deg, #ffc000 1.55%, #ff8a00 95.8%);
+    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+    border-radius: 100px;
+    padding: 20px 27px 20px 27px;
+    margin: 10px 5px 0 0;
+}
+
+.reg__logIn {
+    padding: 20px 60px;
+    margin-left: 5px;
+}
+
+.top-block {
+    background: url(../disign/bgr-top.svg) no-repeat right, linear-gradient(237.65deg, #FFC000 1.55%, #FF8A00 95.8%);
+    background-position: 0 10%;
+}
+
+
+.btn-str {
+    margin: 80px 0 176px 230px;
+}
+
+.btn-str__btn-list {
+    border-radius: 50%;
+    padding: 1px 11px;
+}
+
+.btn-str__list--back {
+    background: url(../disign/back.svg) no-repeat center;
+    background-color: #FFF7DF;
+    margin-right: 15px;
+}
+
+.btn-str__list--next {
+    background: url(../disign/next.svg) no-repeat center;
+    background-color: #FFF7DF;
+}
+
+.btn-str__list--back:hover {
+    background: url(../disign/back_white.svg) no-repeat center, linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+    padding: 5px 15px;
+}
+
+.btn-str__list--next:hover {
+    background: url(../disign/next_white.svg) no-repeat center, linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+    padding: 5px 15px;
+}
+
+
+.footer {
+    background: #212121;
+}
+
+.footer-block {
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-footer {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.col {
+    margin: 46px 190px 56px 131px;
+    width: 265px;
+}
+
+.social-networks {
+    padding: 3px 13px;
+    margin-right: 10px;
+    line-height: 175%;
+}
+
+.social-networks__facebook {
+    background: url(../disign/facebook.svg) no-repeat center;
+}
+
+.social-networks__twiter {
+    background: url(../disign/twiter.svg) no-repeat center;
+}
+
+.social-networks__youtube {
+    background: url(../disign/youtube.svg) no-repeat center;
+}
+
+.social-networks__ball {
+    background: url(../disign/ball.svg) no-repeat center;
+}
+
+.menu-footer {
+    margin: 43px 84px 29px 0;
+    width: 152px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-footer__title {
+    margin-bottom: 40px;
+}
+
+.menu-footer__link {
+    margin-bottom: 9%;
+    font-size: 15px;
+    line-height: 175.78%;
+    color: #FFFFFF;
+    text-decoration: none;
+    ;
+}
+
+.contacts-footer {
+    margin: 43px 84px 29px 0;
+    width: 238px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq {
+    margin: 220px 100px 62px 0;
+    width: 203px;
+    display: flex;
+    flex-direction: column;
+    line-height: 175%;
+}
+
+.privacy-line {
+    background: #000;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 13px 30px;
+}
+
+.site {
+    margin-left: 50px;
+}
+
+.yellow-text {
+    color: #ff8a00;
+    position: relative;
+}
+
+.yellow-text::after {
+    content: "______";
+    width: 20px;
+    height: 1px;
+    color: #ff8a00;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+}
