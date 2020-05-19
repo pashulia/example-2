@@ -98,21 +98,21 @@ body {
 }
 
 .container {
-    margin: 0 156px;
+    margin: 0 15px;
     color: #FFFFFF;
 }
 
 .top-block__title {
     font-size: 44px;
     line-height: 158.34%;
-    width: 534px;
+    width: 300px;
     padding-top: 109px;
 }
 
 .top-block__text {
     font-size: 18px;
     line-height: 33px;
-    width: 444px;
+    width: 300px;
     padding-bottom: 96px;
 }
 
@@ -120,38 +120,25 @@ body {
     font-weight: bold;
 }
 
-
-.btn-str {
-    margin: 80px 0 176px 230px;
-}
-
-.btn-str__btn-list {
-    border-radius: 50%;
-    padding: 1px 11px;
-}
-
-.btn-str__list--back {
-    background: url(../disign/back.svg) no-repeat center;
-    background-color: #FFF7DF;
-    margin-right: 15px;
-}
-
-.btn-str__list--next {
-    background: url(../disign/next.svg) no-repeat center;
-    background-color: #FFF7DF;
-}
-
-.btn-str__list--back:hover {
-    background: url(../disign/back_white.svg) no-repeat center, linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+.search-block__form {
+    border-radius: 10px;
+    background: url(../disign/line-search.svg) no-repeat center, linear-gradient(192.56deg, #FFC000 1.55%, #FF8A00 95.8%);
+    background-position: 50% 65%;
     box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
-    padding: 5px 15px;
+    margin: 90px 20px 70px 20px;
 }
 
-.btn-str__list--next:hover {
-    background: url(../disign/next_white.svg) no-repeat center, linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
-    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
-    padding: 5px 15px;
+.search-block--text {
+    width: 300px;
+    background: url(../disign/search.svg) no-repeat left;
+    background-position: 30px 20px;
+    padding: 24px 10px 34px 60px;
+    border: none;
+    font-size: 10px;
+    line-height: 17px;
+    color: #FFF;
 }
+
 
 
 .footer {
@@ -259,4 +246,27 @@ body {
     position: absolute;
     top: 10%;
     left: 1%;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        margin: 0 156px;
+    }
+
+    .top-block__title {
+        width: 534px;
+    }
+
+    .top-block__text {
+        width: 444px;
+    }
+
+    .search-block__form {
+        margin: 90px 156px 70px 156px;
+    }
+
+    .search-block--text {
+        width: 473px;
+        font-size: 14px;
+    }
 }
