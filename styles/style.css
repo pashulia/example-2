@@ -64,6 +64,10 @@ body {
     height: 15px;
 }
 
+.cart:hover {
+    opacity: 0.5;
+}
+
 .cart__total {
     border-radius: 50%;
     background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
@@ -84,6 +88,10 @@ body {
     border-radius: 100px;
     padding: 20px 27px 20px 27px;
     margin: 10px 5px 0 0;
+}
+
+.reg:hover {
+    opacity: 0.8;
 }
 
 .reg__logIn {
@@ -125,7 +133,7 @@ body {
     background: url(../disign/line-search.svg) no-repeat center,
         linear-gradient(192.56deg, #ffc000 1.55%, #ff8a00 95.8%);
     background-position: 50% 65%;
-    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+    box-shadow: 0 12px 35px rgba(160, 121, 0, 0.2);
     margin: 90px 20px 70px 20px;
 }
 
@@ -153,8 +161,7 @@ body {
 }
 
 .btn {
-    display: flex;
-    flex-wrap: nowrap;
+    display: block;
 }
 
 .courses__option {
@@ -163,6 +170,10 @@ body {
     font-size: 14px;
     line-height: 105.47%;
     color: #5c5c5c;
+}
+
+.courses__option:hover {
+    color: #ff8a00;
 }
 
 .courses__type--title {
@@ -183,7 +194,7 @@ body {
 
 .courses__btn {
     background: linear-gradient(229.9deg, #ffc000 1.55%, #ff8a00 95.8%);
-    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+    box-shadow: 0 12px 35px rgba(160, 121, 0, 0.2);
     border-radius: 100px;
     padding: 19px 63px;
     font-style: normal;
@@ -191,13 +202,12 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #fffefc;
-    margin-top: 10px;
+    margin-top: 30px;
+    border: 1px solid transparent;
 }
 
 .courses__btn:hover {
-    border: 1px solid #212121;
-    background: #fff;
-    color: #2f2f2f;
+    opacity: 0.8;
 }
 
 .results {
@@ -205,18 +215,18 @@ body {
     line-height: 20px;
     color: #2f2f2f;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 14px;
     line-height: 20px;
     color: #2f2f2f;
 }
 
 .results__showing {
-    margin-top: 0;
+    margin: 20px 10px 10px;
 }
 
 .results__show {
-    margin-left: -53px;
+    margin: 20px 0 0 40px;
 }
 
 .results__show--option {
@@ -227,6 +237,10 @@ body {
 
 .results__show--option:hover {
     color: #ff8a00;
+}
+
+.results__view {
+    margin: 20px 0 20px 100px;
 }
 
 .results__view--row {
@@ -271,6 +285,10 @@ body {
     font-size: 14px;
     line-height: 152.34%;
     color: #FFFFFF;
+}
+
+.results-search__sample:hover {
+    opacity: 0.8;
 }
 
 .results-search__sample--title {
@@ -330,7 +348,7 @@ body {
     color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .text-footer {
@@ -339,7 +357,7 @@ body {
 }
 
 .col {
-    margin: 46px 190px 56px 111px;
+    margin: 46px 190px 56px 101px;
     width: 265px;
 }
 
@@ -384,6 +402,10 @@ body {
     text-decoration: none;
 }
 
+.menu-footer__link:hover {
+    opacity: 0.5;
+}
+
 .contacts-footer {
     margin: 43px 84px 29px 0;
     width: 238px;
@@ -392,7 +414,7 @@ body {
 }
 
 .faq {
-    margin: 220px 100px 62px 0;
+    margin: 100px 100px 62px 0;
     width: 203px;
     display: flex;
     flex-direction: column;
@@ -430,8 +452,17 @@ body {
 }
 
 @media screen and (min-width: 600px) {
+    .results {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .results-search {
         gap: 80px;
+    }
+
+    .faq {
+        margin: 220px 100px 62px 0;
     }
 }
 
