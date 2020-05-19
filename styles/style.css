@@ -4,8 +4,7 @@ body {
 
 .header {
     background: #ffffff;
-    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
-    padding: 9px 71px 29px 71px;
+    padding: 29px 71px 19px 71px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -95,7 +94,30 @@ body {
 
 .top-block {
     background: url(../disign/bgr-top.svg) no-repeat right, linear-gradient(237.65deg, #FFC000 1.55%, #FF8A00 95.8%);
-    background-position: 0 10%;
+    background-position: 80% 10%;
+}
+
+.container {
+    margin: 0 156px;
+    color: #FFFFFF;
+}
+
+.top-block__title {
+    font-size: 44px;
+    line-height: 158.34%;
+    width: 534px;
+    padding-top: 109px;
+}
+
+.top-block__text {
+    font-size: 18px;
+    line-height: 33px;
+    width: 444px;
+    padding-bottom: 96px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 
